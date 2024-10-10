@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="searchcss.css">
+    <title>Pencarian</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        .container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.navbar {
+    background-color: #ffffff;
+    border-bottom: 1px solid #e1e8ed;
+    padding: 10px 0;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar img {
+    height: 60px;
+    width: 95px;
+}
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #f21d1d;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #f21d1d;
+}
+        header {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        header input {
+            padding: 10px;
+            width: 300px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        main {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .results {
+            margin-top: 20px;
+        }
+
+        .result-card {
+            background-color: white;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #ffffff;
+            border-top: 1px solid #e0e0e0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="container">
+          <img src="C:\Users\USER\Downloads\konnek.png">
+          <nav>
+            <ul>
+              <li><a href="home.html">Beranda</a></li>
+              <li><a href="search.html">Jelajahi</a></li>
+              <li><a href="notif.html">Notifikasi</a></li>
+              <li><a href="pesan.html">Pesan</a></li>
+              <li><a href="profil.html">Profil</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+    <header>
+        <h1>Konnek with the World</h1>
+        <input type="text" placeholder="Search everything..">
+    </header>
+
+    <main>
+        <section class="results">
+            <h2>Hasil Pencarian</h2>
+            <div class="result-card">
+                <h3>Judul Hasil 1</h3>
+                <p>Deskripsi singkat tentang hasil 1.</p>
+                <a href="#">More..</a>
+            </div>
+            <div class="result-card">
+                <h3>Judul Hasil 2</h3>
+                <p>Deskripsi singkat tentang hasil 2.</p>
+                <a href="#">More..</a>
+            </div>
+            <div class="result-card">
+                <h3>Judul Hasil 3</h3>
+                <p>Deskripsi singkat tentang hasil 3.</p>
+                <a href="#">More..</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Semua Hak Dilindungi.</p>
+    </footer>
+</body>
+</html>
